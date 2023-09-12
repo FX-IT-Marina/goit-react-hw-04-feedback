@@ -1,5 +1,6 @@
-@import-normalize; /* bring in normalize.css styles */
+import { createGlobalStyle } from 'styled-components';
 
+export const GlobalStyle = createGlobalStyle`
 body {
   width: 100%;
   height: 100%;
@@ -8,7 +9,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url('./components/images/stars.png');
   background-repeat: no-repeat;
   background-position: top center;
 }
@@ -21,3 +21,4 @@ ul {
   margin: 0;
   padding: 0;
 }
+`;

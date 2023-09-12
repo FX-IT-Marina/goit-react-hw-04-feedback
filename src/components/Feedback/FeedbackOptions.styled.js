@@ -1,9 +1,11 @@
-.statisticsButton {
+import styled from 'styled-components';
+
+export const StatisticsButton = styled.ul`
   display: flex;
   gap: 40px;
-}
+`;
 
-.button {
+export const Button = styled.button`
   font-size: 30px;
   border-radius: 25px 40px;
   padding: 5px;
@@ -11,9 +13,8 @@
   border: 4px solid rgb(49, 49, 49);
   width: 130px;
   cursor: pointer;
-}
-
-.button:hover {
-  background-color: white;
-  color: rgb(59, 59, 59);
-}
+  &:hover {
+    background-color: white;
+    color: rgb(59, 59, 59);
+  }
+`;
